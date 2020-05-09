@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="QuestryGameGeneral">
-      <HintPath>D:\Foo\Questry\QuestryGameGeneral\QuestryGameGeneral\bin\Debug\QuestryGameGeneral.dll</HintPath>
+      <HintPath>E:\vortexMpdpath\Custom Spawns Clean API-411-1-1-8-1587804820\Modules\CustomSpawnsCleanAPI\bin\Win64_Shipping_Client\QuestryGameGeneral.dll</HintPath>
     </Reference>
     <Reference Include="StoryMode">
       <HintPath>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\StoryMode\bin\Win64_Shipping_Client\StoryMode.dll</HintPath>
@@ -261,6 +261,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomHideouts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

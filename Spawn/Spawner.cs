@@ -12,6 +12,7 @@ using TaleWorlds.Localization;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SandBox.CampaignBehaviors;
 using Helpers;
+using TaleWorlds.ObjectSystem;
 
 namespace CustomSpawns.Spawn
 {
@@ -25,8 +26,8 @@ namespace CustomSpawns.Spawn
             ModDebug.ShowMessage("CustomSpawns: Spawning " + textObject.ToString() + " at " + spawnedSettlement.GatePosition + " in settlement " + spawnedSettlement.Name.ToString());
 
             //create.
-            int numberOfCreated = templateObject.NumberOfCreated;
-            templateObject.IncrementNumberOfCreated();
+            int numberOfCreated = templateObject.Stacks.Count;
+           // templateObject.;
             MobileParty mobileParty = MBObjectManager.Instance.CreateObject<MobileParty>(templateObject.StringId + "_" + numberOfCreated.ToString());
             mobileParty.InitializeMobileParty(textObject, ConstructTroopRoster(templateObject), new TroopRoster(), spawnedSettlement.GatePosition, 0);
 
